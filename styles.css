@@ -1,0 +1,201 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+    color: #F0FDFD;
+}
+
+#search-button{
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    line-height: 0;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 50%;
+    color: white; 
+    cursor: pointer;
+}
+
+#search-button:hover{
+    background-color:#7fc6f1
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-container{
+    height: 85%;
+    width: 30%;
+    background-color: #87CEFA;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.header{
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.address-div,
+.current-day-div{
+    line-height: 0;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.main-app{
+    height: 60%;
+    display: flex;
+}
+
+.relleno{
+    width: 20%;
+    height: 100%;
+}
+
+.temp-icon-div{
+    width: 60%;
+    height: 100%;
+}
+
+.temp-div{
+    margin-top: -20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp{
+    font-size: 100px;
+    line-height: 0;
+}
+
+.degree-symbol {
+    font-size: 100px; 
+    vertical-align: top;
+    margin-left: 140px; 
+    position:fixed;
+}
+
+.max-min-div{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    font-size: 18px;
+    line-height: 0;
+}
+
+.max-div,
+.min-div{
+    display: flex;
+}
+
+
+.description-div{
+    height: 5%;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-div{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.week-day-text{
+    font-size: 25px;
+    line-height: 0;
+    text-align: center;
+}
+
+.hour-temp-div{
+    display: flex;
+    height: 80%;
+    margin-top: 20px;
+}
+
+.hour-div{
+    height: 100%;
+    width: 25%;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hour-temp{
+    line-height: 0;
+    font-size: 25px;
+}
+
+.icon{
+    height: auto;
+    margin: 30px;
+}
+.icon-hour{
+    height: 60px;
+}
+
+
+.city-selector {
+    position: fixed;
+    background-color: white;
+    border: 2px solid #ccc;
+    height: 90%;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+.hidden {
+    display: none;
+}
+  
+.city-selector ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.city-selector ul li {
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: black;
+}
+  
+.city-selector ul li:hover {
+    background-color: #87CEFA; /* Azul claro al pasar el cursor */
+}
+  

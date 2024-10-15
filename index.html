@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <div id="city-selector" class="city-selector hidden">
+      <ul id="city-list"></ul>
+    </div>
+
+
+    <div class="app-container">
+
+      <div class="header">
+        <div class="current-day-div"><p class="current-day-text" id="day-text">2024-10-14</p></div>
+        <div class="address-div"><button id="search-button"><p class="address-text" id="address-text">Buenos Aires</p></button></div>
+      </div>
+
+      <div class="main-app">
+        <div class="relleno"></div>
+
+        <div class="temp-icon-div">
+          <div class="icon-div">
+            <img src="./icon/clear-day.svg" alt="clear-day" id="icon" class="icon">
+          </div>
+          <div class="temp-div">
+            <h1 class="temp" id="temp">
+              19
+            </h1>
+            <span class="degree-symbol">°</span>
+          </div>
+        </div>
+
+        <div class="max-min-div">
+          <div class="max-div">
+            <h2 class="max-temp">Max:</h2>
+            <h2 class="max-temp" id="max-temp">19°</h2>
+          </div>
+          <div class="min-div">
+            <h2 class="min-temp">Min:</h2>
+            <h2 class="min-temp" id="min-temp">15°</h2>
+          </div>
+        </div>
+
+      </div>
+    
+      <div class="description-div">
+        <p class="description-text" id="description-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="footer-div">
+        <div class="week-day-div"><h2 class="week-day-text" id="week-day-render">Monday</h2></div>
+        
+        <div class="hour-temp-div">
+
+          <div class="hour-div">
+            <h3 class="hour-temp">06:00</h3>
+            <div class="hour-icon-div">
+              <img src="./icon/clear-day.svg" alt="clear-day" id="morning-icon" class="icon-hour">
+            </div>
+            <div class="hour-temp-div">
+              <h3 class="hour-temp" id="morning-text">
+                17°
+              </h3>
+            </div>
+          </div>
+
+          <div class="hour-div">
+            <h3 class="hour-temp">12:00</h3>
+            <div class="hour-icon-div">
+              <img src="./icon/clear-day.svg" alt="clear-day" id="mid-day-icon" class="icon-hour">
+            </div>
+            <div class="hour-temp-div">
+              <h3 class="hour-temp" id="mid-day-text">
+                17°
+              </h3>
+            </div>
+          </div>
+
+          <div class="hour-div">
+            <h3 class="hour-temp">15:00</h3>
+            <div class="hour-icon-div">
+              <img src="./icon/clear-day.svg" alt="clear-day" id="afternoon-icon"  class="icon-hour">
+            </div>
+            <div class="hour-temp-div">
+              <h3 class="hour-temp" id="afternoon-text">
+                17°
+              </h3>
+            </div>
+          </div>
+
+          <div class="hour-div">
+            <h3 class="hour-temp">21:00</h3>
+            <div class="hour-icon-div">
+              <img src="./icon/clear-day.svg" alt="clear-day" id="night-icon" class="icon-hour">
+            </div>
+            <div class="hour-temp-div">
+              <h3 class="hour-temp" id="night-text">
+                17°
+              </h3>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
